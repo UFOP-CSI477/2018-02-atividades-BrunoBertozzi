@@ -1,0 +1,75 @@
+#absoluta{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%
+}   
+
+#logo{
+    float: left;
+}
+
+#menu ul {
+    padding:1px;
+    margin:0px;
+    float: right;
+    background-color:#A9D0F5;
+    list-style:none;
+    border-radius: 6px;
+    width: 100%;
+    border: 1px solid white;
+}
+
+#menu ul li{
+    position: relative;
+    margin: 8px;
+    display: inline;
+      color: #FFFFFF;
+}
+
+#menu ul li a,#menu ul li span,#menu ul li span:after{
+    -webkit-transition:.2s ease-out;
+    -moz-transition:.2s ease-out;
+    -o-transition:.2s ease-out;
+    -ms-transition:.2s ease-out
+}
+
+#menu ul li a{
+    color: #FFFFFF;
+    text-decoration:none;
+    display:inline-block;
+    margin-left:10px;
+    padding:0 2px;
+    line-height:5px
+}
+
+#menu ul li span{
+    display:inline-block;
+    font-family:'verdana',sans-serif;
+    font-size:15px;
+    color:#FFFFFF;
+    text-transform:uppercase;
+    position:relative
+}
+
+#menu{
+    cursor: pointer;
+}
+            
+a#menu ul li span:link{
+    color: #b9c941;
+}
+
+#menu ul li span:visited{
+    color: #071914;
+}
+
+#menu ul li span:hover{
+    color: #FFF;
+    background-color: #58ACFA;
+    padding-top:10px; 
+}
+
+#menu ul li span:active{
+    color: #e4f371;
+}

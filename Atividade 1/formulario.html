@@ -1,0 +1,122 @@
+<!DOCTYPE html> <!-- define qual HTML esta sendo usado, no caso HTML 5 -->
+
+<html lang="en" dir="ltr"> <!-- tag raiz -->
+
+	<head> <!--definições da pagina  -->
+		<meta charset="utf-8"> 
+		<title>Cadastro de aluno</title> 
+
+		<style type="text/css">
+			.menu{
+				background-color: #D8D8D8;
+				font-size: 20px;
+				border-width: medium;
+				border-style: solid;
+				border-color: #00000;
+			}		
+
+		</style>
+		
+	</head>
+
+	<body> <!-- documento que vai ser apresenrado -->
+
+		<div class="menu">		
+			<a href="introducao.html">Home</a>
+			<a href="formulario.html">Cadastro</a><br><br>
+		</div>
+
+		<div class="menu">
+		<h1>Dados do Cadastro</h1>
+
+		<form method="post" action="validar.html"> 
+			<!-- action para quem vamos submeter -->
+			<!-- methor como estamos submetendo, pode usar get e post -->
+			<!-- get = todos dados estão na URL em texto puro, alem de ter uma limitação de 256 caracteres-->
+			<!-- post = não possui limitação. -->
+
+
+			<label for="login">Usuário:</label>
+			<input type="text" name="login" placeholder=" nome de usuario" autocomplete="none"><br><br>
+			<!-- coloca um texto bem claro com a descrição do campo a ser preenchido -->
+			<!-- o auto complete none nao deixa gravar o login para ficar lembrando -->
+
+			<label for="senha">Senha:</label>
+			<input type="password" name="senha" placeholder=" 0-9 a-Z"><br><br>
+
+			<label for="endereço">Endereço:</label>
+			<input type="text" name="endereço">
+
+			&nbsp;
+
+			<label for="numero">Numero:</label>
+			<input type="text" name="numero"><br><br>
+			<!-- maxlength define o tamanho maximo que pode ser escrito no campo-->
+
+			 <label for="cidade">Cidade</label>
+			 <select name="cidade">:
+			 	<option value="0">Selecione</option>
+			 	<option value="1">Poços de caldas</option>
+			 	<option value="2">São Paulo</option>
+			 	<option value="3">João Monlevade</option>
+			 	<option value="4">rio grande</option>
+			 	<option value="5">Blumenau</option>
+			 </select>
+
+			&nbspEstados: 
+			<select>
+				<option value="01">SP</option>
+				<option value="02">MG</option>
+				<option value="03">RJ</option>
+			</select><br><br>
+
+			<label for"telefone>Telefone</label>
+			<input type="tel" name="telefone" maxlength="18" placeholder=" (0xx) 9 xxxx-xxxx"><br><br>
+
+			<label for="genero">Genero:</label>
+
+			<input type="radio" name= "genero" id="feminino" value="F"> 
+			<label for="feminino">Feminino</label> 
+
+			<input type="radio" name= "genero" id="masculino" value="M"> 
+			<label for="masculino">Masculino</label>
+
+			<input type="radio" name= "genero" id="nbinario" value="NB">
+			<label for="nbinario">Nao binario</label>
+
+			 <br><br>
+
+			 <label for="area">Areas de interesse:</label>
+
+			 <br>
+
+			 <input type="checkbox" name="area[0]" id="web">
+			 <label for="web">Desenvolvimento web</label>
+
+			 <br>
+
+			 <input type="checkbox" name="area[1]" id="bd">
+			 <label for="bd">Banco de dados</label>
+
+			 <br>
+
+			 <input type="checkbox" name="area[2]" id="otim">
+			 <label for="otim">Otimização</label>
+
+			 <br><br>
+
+			<input type="submit" value="Cadastrar">
+			<input type="reset" value="Limpar">
+			<!--a diferença de usar submit e button é que dependendo do motor de navegação algumas caractereiscas podem nao sem implementadas e falhar na submissão de dados -->
+
+			<br><br>
+		</form>
+
+		</div>
+
+		<div>
+			<h5 align="center">Desenvolvido por Bruno LINDÃO ^-^</h5>
+		</div>
+	</body>
+
+</html>
